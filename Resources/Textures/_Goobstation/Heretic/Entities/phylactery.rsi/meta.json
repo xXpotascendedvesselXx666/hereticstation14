@@ -8,13 +8,13 @@
   },
   "states": [
       {
-          "name": "phylactery1"
-      },
-      {
-          "name": "phylactery2"
-      },
-      {
           "name": "phylactery"
+      },
+      {
+          "name": "phylactery-1"
+      },
+      {
+          "name": "phylactery-2"
       },
       {
           "name": "icon"

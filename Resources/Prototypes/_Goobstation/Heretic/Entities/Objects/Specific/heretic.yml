@@ -39,6 +39,9 @@
   - type: Tag
     tags:
     - HereticItem
+    - CodexCicatrix # Ratbite - for CodexMorbus ritual
+
+# <Ratbite> - new heretic items
 
 - type: entity
   parent: [ BaseItem, BaseMagicalContraband ]
@@ -87,38 +90,27 @@
   components:
   - type: UnholyItem
   - type: Sprite
-    sprite: _Goobstation/Heretic/phylactery.rsi
+    sprite: _Goobstation/Heretic/Entities/phylactery.rsi
     layers:
       - state: icon
   - type: Icon
-    sprite: _Goobstation/Heretic/phylactery.rsi
+    sprite: _Goobstation/Heretic/Entities/phylactery.rsi
     state: icon
   - type: Appearance
   - type: Tag
     tags:
     - HereticItem
   - type: Injector
-    minTransferAmount: 5
-    maxTransferAmount: 5
-    injectOnly: true
-    toggleState: Draw
     solutionName: injector
     ignoreMobs: false
-    delay: 0
-    delayPerVolume: 0
-    bypassInjectionBlock: true
-    instant: true
-    targetAfterDrawMessage: hypospray-component-feel-prick-message
-    drawSound:
-      path: /Audio/Items/hypospray.ogg
-    ignoreAccessChecks: true
-    activeModeProtoId: DropperDrawMode
+    activeModeProtoId: HyposprayDrawMode
     allowedModes:
-    - DropperDrawMode
+    - HyposprayDrawMode
     - DropperInjectMode
   - type: SolutionContainerVisuals
     maxFillLevels: 2
     fillBaseName: phylactery
+    solutionName: injector
     metamorphic: false
   - type: SolutionContainerManager
     solutions:
@@ -135,10 +127,10 @@
   - type: RefillableSolution
     solution: injector
   - type: SolutionTransfer
-  - type: Forensics
-    canStoreDNA: false
   - type: UseDelay
     delay: 0.3
+
+# </Ratbite>
 
 - type: entity
   parent: [ DrinkBase, BaseMagicalContraband ]

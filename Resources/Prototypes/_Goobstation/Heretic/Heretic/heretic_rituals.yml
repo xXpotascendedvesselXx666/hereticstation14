@@ -450,15 +450,18 @@
   output:
     CarvingKnife: 1
 
+# <Ratbite> - new heretic items
+
 - type: hereticRitual
   id: PhylacteryOfDamnation
   locName: heretic-ritual-basic-phylactery
   locDesc: heretic-ritual-basic-phylactery-desc
   icon:
-    sprite: _Goobstation/Heretic/phylactery.rsi
+    sprite: _Goobstation/Heretic/Entities/phylactery.rsi
     state: icon
   customBehaviors:
   - !type:RitualReagentPuddleBehavior
+    reagent: Blood
   requiredTags:
     GlassBeaker: 1
   output:
@@ -473,7 +476,11 @@
     state: icon-on
   customBehaviors:
   - !type:RitualSacrificeBehavior
+    min: 1
+    max: 1
   requiredTags:
     CodexCicatrix: 1
   output:
     CodexMorbus: 1
+
+# </Ratbite>

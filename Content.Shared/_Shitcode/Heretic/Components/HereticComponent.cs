@@ -30,6 +30,7 @@ public sealed partial class HereticComponent : Component
         "CloakOfShadow",
         "Reminiscence",
         "FeastOfOwls",
+        "PhylacteryOfDamnation",
     };
 
     [DataField, AutoNetworkedField]

@@ -118,6 +118,12 @@
   parent: [ BaseInstantHyposprayMode, BaseDynamicMode ]
   id: HyposprayDynamicMode
 
+# <Ratbite> - e vil shitcoed :joel: (for HereticPhylactery)
+- type: injectorMode 
+  parent: [ BaseInstantHyposprayMode, BaseDrawMode ]
+  id: HyposprayDrawMode
+# </Ratbite>
+
 - type: injectorMode
   parent: HyposprayDynamicMode
   id: HypopenDynamicMode

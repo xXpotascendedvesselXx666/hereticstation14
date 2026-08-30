@@ -159,3 +159,21 @@
     stock: 1
   - !type:HereticPathCondition
     stage: 7
+
+# <Ratbite> - new heretic items
+
+- type: listing
+  id: HereticSidePath6CodexMorbus
+  name: knowledge-path-side-s6-morbus-name
+  description: knowledge-path-side-s6-morbus-desc
+  icon: { sprite: _Goobstation/Heretic/book_morbus.rsi, state: icon }
+  productHereticKnowledge: CodexMorbus
+  cost:
+    KnowledgePoint: 1
+  categories:
+  - HereticPathSide
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+  - !type:HereticPathCondition
+    stage: 5
