@@ -188,3 +188,18 @@
     state: icon
   - type: Item
     sprite: _Goobstation/Heretic/Blades/blade_cosmos-inhand.rsi
+
+- type: entity
+  parent: HereticBladeBase
+  id: HereticBladeMoon
+  name: moon blade
+  description: A gravity-defying blade, it ripples everytime you look at it.
+  suffix: Moon
+  components:
+  - type: HereticBlade
+    path: Moon
+  - type: Sprite
+    sprite: _Goobstation/Heretic/Blades/blade_moon.rsi
+    state: icon
+  - type: Item
+    sprite: _Goobstation/Heretic/Blades/blade_moon-inhand.rsi
