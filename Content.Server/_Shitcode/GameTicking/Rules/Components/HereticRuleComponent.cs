@@ -26,6 +26,7 @@ public sealed partial class HereticRuleComponent : Component
         "HereticPathVoid",
         "HereticPathRust",
         "HereticPathCosmos",
+        "HereticPathMoon",
         "HereticPathSide",
     };
 }

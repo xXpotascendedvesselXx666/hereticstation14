@@ -72,6 +72,8 @@ heretic-speech-ash-rebirth = G'LR'Y T' TH' N'GHT'W'TCH'ER!
 heretic-speech-ash-flame = FL'MS!!
 heretic-speech-ash-cascade = C'SC'DE!!
 
+heretic-speech-moon-smile-of-the-moon = SM'L' F'R T'H R'NGL'D'R!!
+
 heretic-speech-blade-furioussteel = F'LSH'NG S'LV'R!
 
 heretic-speech-flesh-surgery = CL'M M'N!

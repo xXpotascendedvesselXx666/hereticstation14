@@ -55,6 +55,31 @@
   ritualPrototypes:
   - BladeAsh
 
+### moon path
+- type: hereticKnowledge
+  id: MoonlightTroupe
+  path: Moon
+  stage: 1
+  ritualPrototypes:
+  - BladeMoon
+
+- type: hereticKnowledge
+  id: MoonPlaceholder2
+  path: Moon
+  stage: 2
+
+- type: hereticKnowledge
+  id: MoonPlaceholder3
+  path: Moon
+  stage: 3
+  actionPrototypes:
+  - ActionHereticSmileOfTheMoon
+
+- type: hereticKnowledge
+  id: LunarGrasp
+  path: Moon
+  stage: 4
+
 - type: hereticKnowledge
   id: GraspOfAsh
   path: Ash

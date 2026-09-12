@@ -1,0 +1,24 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: entity
+  parent: BaseAction
+  id: ActionHereticSmileOfTheMoon
+  name: Smile of the Moon
+  description: A long-ranged lunar spell that blinds and stuns a target for 15 seconds.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Action
+    useDelay: 25
+    itemIconStyle: NoItem
+    icon:
+      sprite: _Goobstation/Heretic/abilities_heretic.rsi
+      state: mansus_grasp
+  - type: TargetAction
+    range: 8
+    checkCanAccess: false
+  - type: EntityTargetAction
+    event: !type:EventHereticSmileOfTheMoon
+  - type: HereticAction
+    requireMagicItem: true
+  - type: SpeakOnAction
+    sentence: heretic-speech-moon-smile-of-the-moon

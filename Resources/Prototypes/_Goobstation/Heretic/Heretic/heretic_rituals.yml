@@ -93,6 +93,20 @@
   limit: 2
 
 - type: hereticRitual
+  id: BladeMoon
+  locName: knowledge-path-moon-s1-name
+  locDesc: knowledge-path-moon-s1-desc
+  icon:
+    sprite: _Goobstation/Heretic/Blades/blade_moon.rsi
+    state: icon
+  requiredTags:
+    Knife: 1
+    SheetGlass: 2
+  output:
+    HereticBladeMoon: 1
+  limit: 2
+
+- type: hereticRitual
   id: MaskOfMadness
   locName: knowledge-path-ash-s6-name
   locDesc: knowledge-path-ash-s6-desc

@@ -37,6 +37,11 @@
   priority: 0
 
 - type: storeCategory
+  id: HereticPathMoon
+  name: store-heretic-path-lunar
+  priority: 0
+
+- type: storeCategory
   id: HereticPathSide
   name: store-heretic-path-side
   priority: 999 # lowest possible

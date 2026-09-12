@@ -1,0 +1,81 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: listing
+  id: HereticMoonPath1
+  name: knowledge-path-moon-s1-name
+  description: knowledge-path-moon-s1-desc
+  icon: { sprite: _Goobstation/Heretic/Blades/blade_moon.rsi, state: icon }
+  productHereticKnowledge: MoonlightTroupe
+  cost:
+    KnowledgePoint: 1
+  categories:
+  - HereticPathMoon
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+  - !type:HereticPathCondition
+    stage: 0
+    # add every path here because you shouldn't be able to buy more starter knowledge
+    blacklist:
+    - Ash
+    - Blade
+    - Flesh
+    - Lock
+    - Void
+    - Rust
+    - Cosmos
+    - Moon
+
+- type: listing
+  id: HereticMoonPath2
+  name: moon-path-placeholder-2-name
+  description: moon-path-placeholder-desc
+  icon: { sprite: _Goobstation/Heretic/Blades/blade_moon.rsi, state: icon }
+  productHereticKnowledge: MoonPlaceholder2
+  cost:
+    KnowledgePoint: 1
+  categories:
+  - HereticPathMoon
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+  - !type:HereticPathCondition
+    stage: 1
+    whitelist:
+    - Moon
+
+- type: listing
+  id: HereticMoonPath3
+  name: smile-of-the-moon-name
+  description: smile-of-the-moon-desc
+  icon: { sprite: _Goobstation/Heretic/Blades/blade_moon.rsi, state: icon }
+  productHereticKnowledge: MoonPlaceholder3
+  cost:
+    KnowledgePoint: 1
+  categories:
+  - HereticPathMoon
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+  - !type:HereticPathCondition
+    stage: 2
+    whitelist:
+    - Moon
+
+- type: listing
+  id: HereticMoonPath4
+  name: lunar-grasp-name
+  description: moon-path-placeholder-desc
+  icon: { sprite: _Goobstation/Heretic/mansus_grasp.rsi, state: icon }
+  productHereticKnowledge: LunarGrasp
+  cost:
+    KnowledgePoint: 2
+  categories:
+  - HereticPathMoon
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+  - !type:HereticPathCondition
+    stage: 3
+    whitelist:
+    - Moon

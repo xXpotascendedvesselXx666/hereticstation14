@@ -407,6 +407,15 @@ public sealed partial class EventHereticRustCharge : WorldTargetActionEvent
     public float Speed = 10f;
 }
 
+public sealed partial class EventHereticSmileOfTheMoon : EntityTargetActionEvent
+{
+    [DataField]
+    public TimeSpan BlindDuration = TimeSpan.FromSeconds(15);
+
+    [DataField]
+    public TimeSpan StunDuration = TimeSpan.FromSeconds(15);
+}
+
 // ascensions
 public sealed partial class HereticAscensionAshEvent : HereticKnowledgeEvent;
 

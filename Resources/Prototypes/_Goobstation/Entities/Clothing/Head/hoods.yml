@@ -97,3 +97,14 @@
   - type: Clothing
     sprite: _Goobstation/Heretic/Clothing/Head/blade_hood.rsi
 
+- type: entity
+  parent: ClothingHeadHatHoodHereticCostume
+  id: ClothingHeadHatHoodHereticMoonCostume
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Heretic/Clothing/Head/moon_hood.rsi
+    state: icon
+  - type: Clothing
+    sprite: _Goobstation/Heretic/Clothing/Head/moon_hood.rsi
+

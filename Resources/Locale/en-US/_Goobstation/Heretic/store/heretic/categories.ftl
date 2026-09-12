@@ -12,4 +12,5 @@ store-heretic-path-void = Path of Void
 store-heretic-path-rust = Rusted Path
 store-heretic-path-blade = Path of Blade
 store-heretic-path-cosmos = Path of Cosmos
+store-heretic-path-lunar = Lunar Path
 store-heretic-path-side = Side Knowledge

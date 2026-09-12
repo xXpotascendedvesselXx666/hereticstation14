@@ -1,7 +1,9 @@
 using Content.Shared._Shitcode.Heretic.Components;
+using Content.Shared.Eye.Blinding.Components;
 using Content.Shared.Hands.Components;
 using Content.Shared.Heretic;
 using Content.Shared.Projectiles;
+using Content.Shared.StatusEffect;
 
 namespace Content.Shared._Shitcode.Heretic.Systems.Abilities;
 
@@ -12,6 +14,7 @@ public abstract partial class SharedHereticAbilitySystem
         SubscribeLocalEvent<EventHereticCloak>(OnCloak);
         SubscribeLocalEvent<EventHereticRustCharge>(OnRustCharge);
         SubscribeLocalEvent<EventHereticIceSpear>(OnIceSpear);
+        SubscribeLocalEvent<EventHereticSmileOfTheMoon>(OnSmileOfTheMoon);
     }
 
     private void OnCloak(EventHereticCloak args)
@@ -114,5 +117,27 @@ public abstract partial class SharedHereticAbilitySystem
         _throw.TryThrow(ent, dir.Normalized() * args.Distance, args.Speed, playSound: false, doSpin: false);
 
         args.Handled = true;
+    }
+
+    private void OnSmileOfTheMoon(EventHereticSmileOfTheMoon args)
+    {
+        if (!TryUseAbility(args))
+            return;
+
+        if (args.Target == EntityUid.Invalid)
+            return;
+
+        if (!TryComp(args.Target, out StatusEffectsComponent? status))
+            return;
+
+        args.Handled = true;
+
+        Status.TryAddStatusEffect<TemporaryBlindnessComponent>(args.Target,
+            "TemporaryBlindness",
+            args.BlindDuration,
+            true,
+            status);
+
+        _stun.KnockdownOrStun(args.Target, args.StunDuration, true);
     }
 }

@@ -205,6 +205,20 @@
       head: ClothingHeadHatHoodHereticBladeCostume
 
 - type: entity
+  parent: ClothingOuterArmorHereticCostume
+  id: ClothingOuterArmorHereticMoonCostume
+  suffix: Moon
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Heretic/Clothing/OuterClothing/moon_armor.rsi
+    state: icon
+  - type: Clothing
+    sprite: _Goobstation/Heretic/Clothing/OuterClothing/moon_armor.rsi
+  - type: ToggleableClothing
+    clothingPrototypes:
+      head: ClothingHeadHatHoodHereticMoonCostume
+
+- type: entity
   parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing, BaseMajorContraband]
   id: ClothingOuterBrassArmor
   name: brass armor

@@ -125,6 +125,20 @@
       head: ClothingHeadHatHoodHereticCosmos
 
 - type: entity
+  parent: ClothingOuterArmorHeretic
+  id: ClothingOuterArmorHereticMoon
+  suffix: Moon
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Heretic/Clothing/OuterClothing/moon_armor.rsi
+    state: icon
+  - type: Clothing
+    sprite: _Goobstation/Heretic/Clothing/OuterClothing/moon_armor.rsi
+  - type: ToggleableClothing
+    clothingPrototypes:
+      head: ClothingHeadHatHoodHereticMoon
+
+- type: entity
   parent: [ ClothingOuterBaseMedium, ClothingOuterStorageToggleableBase, AllowSuitStorageClothing, BaseMagicalContraband ]
   id: ClothingOuterArmorCloakVoid
   name: void cloak
